@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="icon" format="reference"/>
+    <attr name="icon_hover" format="reference"/>
+    <attr name="icon_select" format="reference"/>
+    <attr name="text_size" format="dimension"/>
+    <attr name="theme_color" format="color"/>
+    <attr name="text" format="string"/>
+    <attr name="text_padding" format="dimension"/>
+    <attr name="enable_bottom_light" format="boolean"/>
+    <attr name="bottom_light_color" format="color"/>
+
+    <declare-styleable name="customButton">
+        <attr name="icon"/>
+        <attr name="text_size"/>
+        <attr name="theme_color"/>
+        <attr name="text"/>
+        <attr name="text_padding"/>
+        <attr name="icon_hover"/>
+        <attr name="icon_select"/>
+        <attr name="enable_bottom_light"/>
+        <attr name="bottom_light_color"/>
+    </declare-styleable>
+</resources>

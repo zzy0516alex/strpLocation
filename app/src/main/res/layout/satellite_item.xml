@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sat_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bds"/>
+    <TextView
+        android:layout_toEndOf="@+id/sat_icon"
+        android:layout_marginStart="4dp"
+        android:id="@+id/prn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C12"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+</RelativeLayout>

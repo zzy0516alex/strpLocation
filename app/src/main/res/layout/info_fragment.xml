@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.yinglan.scrolllayout.ScrollLayout
+            android:id="@+id/scroll_down_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            app:allowHorizontalScroll="true"
+            app:exitOffset="0dp"
+            app:isSupportExit="true"
+            app:maxOffset="260dp"
+            app:minOffset="50dp"
+            app:mode="open">
+
+            <com.yinglan.scrolllayout.content.ContentScrollView
+                android:id="@+id/content_scroll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/dragger"
+                        android:background="#00000000"
+                        android:id="@+id/drawer"/>
+                    <FrameLayout
+                        android:id="@+id/info_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/drawer"/>
+                </RelativeLayout>
+            </com.yinglan.scrolllayout.content.ContentScrollView>
+        </com.yinglan.scrolllayout.ScrollLayout>
+    </FrameLayout>
+</RelativeLayout>
